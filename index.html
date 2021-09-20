@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Первое задание</title>
+</head>
+<body>
+<br>
+<ol>
+    <li>
+        <a href="http://example.com">Main link</a>
+    </li>
+    <li>
+        <a href="https://www.w3schools.com/">W3School</a>
+    </li>
+    <li>
+        <a href="ftp://sisadmin.ru/hranilishe/1.txt">Без авторизации</a>
+    </li>
+    <li>
+        <a href="ftp://test:password@sisadmin.ru/hranilishe/1.txt">С авторизацией</a>
+    </li>
+    <li>
+        <a href="https://test.html#bottom">Ссылка на часть страницы(якорь)</a>
+    </li>
+    <li>
+        <a href="#top">Ссылка на начало страницы</a>
+    </li>
+    <li>
+        <a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя GET параметрами</a>
+    </li>
+    <li>
+        <h2>Навигация меню</h2>
+        <a href="#anchor">Начало страницы</a>
+        <a href="#">Главная</a>
+    </li>
+    <li>
+        <a>Ссылка без href</a> <!-- зачем -->
+    </li>
+    <li>
+        <a href="">Ссылка с пустым href</a>
+    </li>
+    <li>
+        <a href="https://test.com" rel="nofollow">Ссылка nofollow</a>
+    </li>
+    <li>
+        <a href="https://test.com" rel="noindex">Ссылка noindex</a>
+    </li>
+    <li>
+        <h2>Пример абзаца для контекстной ссылки</h2>
+        <p>
+            <a href="https://ru.wikipedia.org/wiki/Кобейн,_Курт">Курт Кобейн</a> был великим музыкантом
+        </p>
+    </li>
+    <li>
+        <a href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f">
+            <img src="webimage.jpg" width="500" height="500" alt="city">
+        </a>
+    </li>
+    <li>
+
+        <img src="webimage.jpg" width="600" height="800" usemap="#navigation" alt="map">
+        <map name="navigation">
+        <area shape="circle"
+        coords="600,400,200"
+        href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f"
+        alt="circle">
+        <area shape ="rect"
+        coords="0,0,200,200"
+        href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f"
+        alt="rectangle">
+        </map>
+    </li>
+    <li>
+        <a href="demo.html">Относительная ссылка на файл в том же каталоге</a>
+    </li>
+    <li>
+        <a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a>
+    </li>
+    <li>
+        <a href="../Веб-разработка(черновик).pdf">Относительная ссылка на файл в каталоге, выше нынешнего на один</a>
+    </li>
+    <li>
+        <a href="../../random.html">Относительная ссылка на файл двумя каталогами выше</a>
+    </li>
+    <li>
+        <a href="/">Сокращенная ссылка на главную</a>
+    </li>
+    <li>
+        <a href="./form.html">Сокращенная на внутреннюю</a>
+    </li>
+</ol>
+<br>
+<form action="#" method="post">
+    <h2>Имя:</h2>
+    <input type="text"
+           name="fill-name"
+           value="Name:"><br>
+    <h2>E-mail:</h2>
+    <input type="email"
+           name="email"
+           value="@mail.ru"><br>
+    <h2>Date:</h2>
+    <input type="date"
+           name="date"
+           value="2021-01-01"><br>
+    <h2>Пол :</h2>
+    <input type="radio"
+           checked="checked"
+           name="Пол"
+           value="Мужской" />Мужской<br>
+    <input type="radio"
+           name="Пол"
+           value="Женский" />Женский<br>
+    <h2>Количество конечностей:</h2>
+    <input type="radio" checked="checked"
+           name="count" value="Четыре" />Четыре<br>
+    <input type="radio"
+           name="count" value="Пять" />Пять<br>
+    <h2>Super Powers: </h2>
+    <select name="superpowers"
+            multiple="multiple">
+        <option value="Значение1">Читать мысли</option>
+        <option value="Значение2" selected="selected">Знать всё на свете</option>
+        <option value="Значение3" selected="selected">Бессмертие</option>
+    </select>
+    <br>
+    <h2>Биография</h2>
+    <textarea name="textarea"></textarea>
+    <br>
+    <input type="checkbox"
+           name="check">С условиями подписки ознакомлен(а)<br>
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
