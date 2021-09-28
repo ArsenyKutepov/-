@@ -1,135 +1,192 @@
 <!DOCTYPE html>
-<html lang="Ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Первое задание</title>
+    <title>Второе задание</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<br>
-<ol>
-    <li>
-        <a href="http://example.com">Main link</a>
-    </li>
-    <li>
-        <a href="https://www.w3schools.com/">W3School</a>
-    </li>
-    <li>
-        <a href="ftp://sisadmin.ru/hranilishe/1.txt">Без авторизации</a>
-    </li>
-    <li>
-        <a href="ftp://test:password@sisadmin.ru/hranilishe/1.txt">С авторизацией</a>
-    </li>
-    <li>
-        <a href="https://test.html#bottom">Ссылка на часть страницы(якорь)</a>
-    </li>
-    <li>
-        <a href="#top">Ссылка на начало страницы</a>
-    </li>
-    <li>
-        <a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя GET параметрами</a>
-    </li>
-    <li>
-        <h2>Навигация меню</h2>
-        <a href="#anchor">Начало страницы</a>
-        <a href="#">Главная</a>
-    </li>
-    <li>
-        <a>Ссылка без href</a> <!-- зачем -->
-    </li>
-    <li>
-        <a href="">Ссылка с пустым href</a>
-    </li>
-    <li>
-        <a href="https://test.com" rel="nofollow">Ссылка nofollow</a>
-    </li>
-    <li>
-        <a href="https://test.com" rel="noindex">Ссылка noindex</a>
-    </li>
-    <li>
-        <h2>Пример абзаца для контекстной ссылки</h2>
-        <p>
-            <a href="https://ru.wikipedia.org/wiki/Кобейн,_Курт">Курт Кобейн</a> был великим музыкантом
-        </p>
-    </li>
-    <li>
-        <a href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f">
-            <img src="webimage.jpg" width="500" height="500" alt="city">
-        </a>
-    </li>
-    <li>
-
-        <img src="webimage.jpg" width="600" height="800" usemap="#navigation" alt="map">
-        <map name="navigation">
-        <area shape="circle"
-        coords="800,800,400"
-        href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f"
-        alt="circle">
-        <area shape ="rect"
-        coords="0,0,200,200"
-        href="https://zen.yandex.ru/media/id/5fbe4e6514e1585f860d7908/avstraliia-odna-iz-spokoinyh-i-bezopasnyh-stran-v-mire-6013f092123cc8767c023a4f"
-        alt="rectangle">
-        </map>
-    </li>
-    <li>
-        <a href="demo.html">Относительная ссылка на файл в том же каталоге</a>
-    </li>
-    <li>
-        <a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a>
-    </li>
-    <li>
-        <a href="../Веб-разработка(черновик).pdf">Относительная ссылка на файл в каталоге, выше нынешнего на один</a>
-    </li>
-    <li>
-        <a href="../../random.html">Относительная ссылка на файл двумя каталогами выше</a>
-    </li>
-    <li>
-        <a href="/">Сокращенная ссылка на главную</a>
-    </li>
-    <li>
-        <a href="./form.html">Сокращенная на внутреннюю</a>
-    </li>
-</ol>
-<br>
-<form action="#" method="post">
-    <h2>Имя:</h2>
-    <input type="text"
-           name="fill-name"
-           value="Name:"><br>
-    <h2>E-mail:</h2>
-    <input type="email"
-           name="email"
-           value="@mail.ru"><br>
-    <h2>Date:</h2>
-    <input type="date"
-           name="date"
-           value="2021-01-01"><br>
-    <h2>Пол :</h2>
-    <input type="radio"
-           checked="checked"
-           name="Пол"
-           value="Мужской" />Мужской<br>
-    <input type="radio"
-           name="Пол"
-           value="Женский" />Женский<br>
-    <h2>Количество конечностей:</h2>
-    <input type="radio" checked="checked"
-           name="count" value="Четыре" />Четыре<br>
-    <input type="radio"
-           name="count" value="Пять" />Пять<br>
-    <h2>Super Powers: </h2>
-    <select name="superpowers"
-            multiple="multiple">
-        <option value="Значение1">Читать мысли</option>
-        <option value="Значение2" selected="selected">Знать всё на свете</option>
-        <option value="Значение3" selected="selected">Бессмертие</option>
-    </select>
+<header>
+    <div class="header-container">
+        <div class="top-img">
+            <img src="webimage.jpg"
+                 alt="logo"
+                 class="logo">
+        </div>
+        <div class="name">
+            <p> Название сайта </p>
+        </div>
+    </div>
+</header>
+<nav class="topnav">
+    <a href="#" class="topnav">Contacts</a>
+    <a href="#" class="topnav">About</a>
+    <a href="#" class="topnav">Pricing</a>
+</nav>
+<div class="main">
     <br>
-    <h2>Биография</h2>
-    <textarea name="textarea"></textarea>
+    <ol>
+        <li>
+            <a href="http://vk.ru">VK</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/">W3School</a>
+        </li>
+        <li>
+            <a href="ftp://sisadmin.ru/hranilishe/1.txt">Без авторизации</a>
+        </li>
+        <li>
+            <a href="ftp://test:password@sisadmin.ru/hranilishe/1.txt">С авторизацией</a>
+        </li>
+        <li>
+            <a href="https://test.html#bottom">Ссылка на часть страницы(якорь)</a>
+        </li>
+        <li>
+            <a href="#top">Ссылка на начало страницы</a>
+        </li>
+        <li>
+            <a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя GET параметрами</a>
+        </li>
+        <li>
+            <h2>Nav Menu</h2>
+            <a href="#anchor">Начало страницы</a>
+            <a href="#">Главная</a>
+        </li>
+        <li>
+            <a>Ссылка без href</a> <!-- зачем -->
+        </li>
+        <li>
+            <a href="">Ссылка с пустым href</a>
+        </li>
+        <li>
+            <a href="https://test.com" rel="nofollow">Ссылка nofollow</a>
+        </li>
+        <li>
+            <a href="https://test.com" rel="noindex">Ссылка noindex</a>
+        </li>
+        <li>
+            <h2>Пример абзаца для контекстной ссылки</h2>
+            <p>
+                <a href="https://ru.wikipedia.org/wiki/Кобейн,_Курт">Курт Кобейн</a> был великим музыкантом
+            </p>
+        </li>
+        <li>
+            <a href="https://self-learning.ru/course/sql-basics?utm_source=infocomp&utm_medium=banner&utm_campaign=sqlbasics&utm_content=sidebar">
+                <img src="webimage.jpg" width="500" height="500" alt="flower">
+            </a>
+        </li>
+        <li>
+            <img src="webimage.jpg" width="800" height="800" usemap="#navigation" alt="map">
+            <map name="navigation">
+                <area shape="circle"
+                      coords="400,400,200"
+                      href="https://www.php.net/manual/ru/book.json.php"
+                      alt="circle">
+                <area shape="rect"
+                      coords="0,0,200,200"
+                      href="https://info-comp.ru/database-normalization"
+                      alt="rectangle">
+            </map>
+        </li>
+        <li>
+            <a href="demo.html">Относительная ссылка на файл в том же каталоге</a>
+        </li>
+        <li>
+            <a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a>
+        </li>
+        <li>
+            <a href="../Веб-разработка(черновик).pdf">Относительная ссылка на файл в каталоге, выше нынешнего на один</a>
+        </li>
+        <li>
+            <a href="../../random.html">Относительная ссылка на файл двумя каталогами выше</a>
+        </li>
+        <li>
+            <a href="/">Сокращенная ссылка на главную</a>
+        </li>
+        <li>
+            <a href="./form.html">Сокращенная на внутреннюю</a>
+        </li>
+    </ol>
     <br>
-    <input type="checkbox"
-           name="check">С условиями подписки ознакомлен(а)<br>
-    <input type="submit" value="Отправить">
-</form>
+    <table>
+        <tr>
+            <th>Первый</th>
+            <th>Второй</th>
+            <th>Третий</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="#" method="post">
+        <h2>Имя:</h2>
+        <input type="text"
+               name="fill-name"
+               value="Name:"><br>
+        <h2>E-mail:</h2>
+        <input type="email"
+               name="email"
+               value="email@mail.ru"><br>
+        <h2>Дата:</h2>
+        <input type="date"
+               name="date"
+               value="2020-10-12"><br>
+        <h2>Пол</h2>
+        <input type="radio"
+               checked="checked"
+               name="gender"
+               value="Мужской" />Мужской<br>
+        <input type="radio"
+               name="gender"
+               value="Женский" />Женский<br>
+        <h2>Количество конечностей:</h2>
+        <input type="radio" checked="checked"
+               name="count" value="Четыре" />Четыре<br>
+        <input type="radio"
+               name="count" value="Пять" />Пять<br>
+        <h2>Super Powers: </h2>
+        <select name="superpowers"
+                multiple="multiple">
+            <option value="Значение1">Читать мысли</option>
+            <option value="Значение2" selected="selected">Знать всё на свете</option>
+            <option value="Значение3" selected="selected">Бессмертие</option>
+        </select>
+        <br>
+        <h2>Биография</h2>
+        <textarea name="textarea"></textarea>
+        <br>
+        <input type="checkbox"
+               name="check">С условиями подписки ознакомлен(а)<br>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
 </body>
+<footer>
+    <p class="bottom">Кутепов Арсений, 2021</p>
+</footer>
 </html>
